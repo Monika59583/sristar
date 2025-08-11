@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Document</title>
+  
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+
+
+  <style>
+    .navbar-gradient {
+      background: linear-gradient(90deg, #FFD700, #FFA500, #FF8C00);
+      /* Gold to dark orange */
+    }
+
+    .navbar-nav .nav-link {
+      margin: 0 15px;
+      /* Adds horizontal spacing between links */
+      font-weight: 500;
+      font-size: 1rem;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+  </style>
+  </head>
+
+  <body>
+
+   <nav class="navbar navbar-expand-lg navbar-gradient">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="assets/logo.png" alt="" style="height: 80px; width: auto; margin-right: 10px;">
+          Sristar Gold
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-left" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active text-black" aria-current="page" href="Home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="service.html">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="branches.html">Branches</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="partner.html">Partner</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="return.html">Gold Card</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="contact.html">Contact Us</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                About Us
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="known.html">Who are </a></li>
+                <li><a class="dropdown-item" href="#">Gallery</a></li>
+                <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+              </ul>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carousel Section -->
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active position-relative">
+         <img src="assets/partern.jpeg" class="d-block w-100" alt="" style="height: 390px; object-fit: cover;">
+          </div>
+
+          <div class="carousel-caption d-none d-md-block">
+        <h1 class="text-shadow">Legacy Partner</h1>
+      </div>
+      </div>
+    </div>
+
+    <style>
+      .carousel-caption {
+        bottom: 20%;
+      }
+
+      .text-shadow {
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        color: #fffce0;
+      }
+
+      @media (max-width: 768px) {
+        .carousel-caption h1 {
+          font-size: 2rem;
+        }
+      }
+    </style>
+
+
+  <style>
+      body {
+        font-family: 'Open Sans', sans-serif;
+        background-color: #fffaf5;
+        color: #333;
+      }
+
+      h2 {
+        font-family: 'Playfair Display', serif;
+        color: #8B0000;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      th {
+        background-color: #45260a;
+        color: white;
+        padding: 12px;
+      }
+
+      td {
+        padding: 12px;
+        border: 1px solid #e3c99c;
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+
+      ul li {
+        margin-bottom: 10px;
+      }
+
+      .form-section input,
+      .form-section textarea {
+        font-size: 14px;
+      }
+
+      .form-section h2 {
+        margin-bottom: 20px;
+      }
+
+      .confirmation-card {
+        display: none;
+        margin-top: 30px;
+        text-align: center;
+      }
+
+      .confirmation-card .card {
+        background-color: #e8f5e9;
+        border-left: 5px solid #4caf50;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .confirmation-card .card-body {
+        font-weight: 500;
+        color: #2e7d32;
+        font-size: 18px;
+      }
+
+      .confirmation-card .checkmark {
+        font-size: 40px;
+        color: #4caf50;
+      }
+    </style>
+    
+      <div class="container section-container d-flex justify-content-center">
+        <div style="max-width: 900px; width: 150%;">
+
+          <section id="franchise-opportunity">
+            <h2 class="text-center fw-bold mb-4">Franchise Opportunity</h2>
+            <p>Do you want an all-in-one profession that gives you Independence, Flexibility, Satisfaction, Security and
+              a Good Pay altogether? But, the corporate 9 to 5 jobs can’t offer you everything. So, have you been
+              thinking about starting your own business? Then you must understand that building your own company from
+              scratch is complicated and time-consuming.</p>
+            <p>Establishing a business requires many elements such as management skills, knowledge of workings in the
+              industry, proper planning and execution, along with arranging a large sum of money.</p>
+            <p>We have an offer that makes everything easier for you. And if you join us, you can avoid all the risk
+              factors and enjoy fixed income monthly.</p>
+          </section>
+
+          <section id="proposal">
+            <h2 class="text-center fw-bold mb-4">Our Proposal</h2>
+            <p>Now you have the Golden Opportunity to secure your finances by becoming our Franchise. Yes, you can be a
+              Gold Trader as well.</p>
+            <p>We want to set up 100 stores by the end of 2022 in Tier 2, Tier 3, and Tier 4 small towns and cities. So,
+              we are in search of people with the zeal of starting and operating a successful business.</p>
+            <p>We follow the FOCO Model (Franchise Owned Company Operated) which has proven to be safe and successful.
+              Also, we have a simple and one-time investment plan with assured monthly returns.</p>
+            <p>You receive a guaranteed return of 38% to 45% annually irrespective of the business outcome along with
+              profit sharing. So, you get a monthly fixed return of at least ₹33,333 every month without putting almost
+              no effort.</p>
+            <p>We need a store with an area of 300 to 500 sq. ft. It’s okay if you don’t have your own space. We can
+              rent a business spot together. In that case, you pay the rental deposit and we take care of the monthly
+              rents.</p>
+          </section>
+
+          <section id="benefits">
+            <h2 class="text-center fw-bold mb-4">Benefits</h2>
+            <ul>
+              <li>Most importantly you get the scope of making your own fate rather than working under others</li>
+              <li>We are the first and only Gold Company that guarantees assured returns on your investment from the
+                very 1st month itself</li>
+              <li>You get the chance to enter the industry that has ZERO recession</li>
+              <li>You earn at least ₹ 33,333 every month without even being physically present</li>
+              <li>We work in FOCO Model that ensures both you and we are free of risks</li>
+            </ul>
+            <h5 class="text-danger fw-semibold">Your one-time investment to start your own company is ₹ 20 lacs + Rental
+              Deposit.</h5>
+            <table>
+              <thead>
+                <tr>
+                  <th>No.</th>
+                  <th>List of Expense</th>
+                  <th>Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Interior & Fitouts</td>
+                  <td>103000</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Internal Branding & Signage</td>
+                  <td>30000</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Equipment</td>
+                  <td>1057000</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Stationery Items</td>
+                  <td>10000</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Business Promotion & Inventory</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Franchise Fee</td>
+                  <td>300000</td>
+                </tr>
+                <tr>
+                  <td colspan="2"><strong>Branch Setup Cost</strong></td>
+                  <td><strong>1500000</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <section id="why-us">
+            <h2 class="text-center fw-bold mb-4">Why Us</h2>
+            <div class="d-flex justify-content-center">
+              <ul class="text-start" style="max-width: 600px;">
+                <li>Founded in 2019 by Mr Srikanth V. Nalige and Mr Manjappa Bidaragadgi</li>
+                <li>10+ stores successfully operating in South India</li>
+                <li>Almost 10 years of experience in the gold industry</li>
+                <li>FOCO Model allows you to continue with your passion while receiving fixed monthly returns</li>
+              </ul>
+            </div>
+          </section>
+
+          <section id="process">
+            <h2 class="text-center fw-bold mb-4">Process</h2>
+            <p class="text-danger">We take around 30 to 45 days to set up and launch the franchise. After you finalise
+              the deal with us, it’s our duty to handle everything and ensure that the operations in the new franchise
+              store start within the next month.</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>No of Days</th>
+                  <th>Process</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Day 1 - Day 7</td>
+                  <td>Finalization of the deal after payment of the investment amount</td>
+                </tr>
+                <tr>
+                  <td>Day 8 - Day 11</td>
+                  <td>Survey and Evaluation of the market to gather data for business</td>
+                </tr>
+                <tr>
+                  <td>Day 12 - Day 21</td>
+                  <td>Letter of Intent + beginning of Setup</td>
+                </tr>
+                <tr>
+                  <td>Day 22 - Day 30/45</td>
+                  <td>Installation of all the requirements in the store</td>
+                </tr>
+              </tbody>
+            </table>
+            <p style="font-size: 1rem;">
+              <strong>For any other information please call +91 63 66 333 444.</strong><br>
+              You can also visit the nearest Sristar Gold Company branch to you.
+            </p>
+          </section>
+
+        </div>
+      </div>
+
+
+       <style>
+        /* body {
+          background-color: #f9f5ef;
+          font-family: 'Segoe UI', sans-serif;
+        } */
+
+        .form-card {
+          background: #fff;
+          border-radius: 20px;
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+          padding: 30px;
+          max-width: 1000px;
+          margin: 50px auto;
+        }
+
+        .form-heading {
+          text-align: center;
+          font-size: 2rem;
+          color: #8B0000;
+          font-weight: 700;
+          margin-bottom: 30px;
+        }
+
+        .success-card {
+          display: none;
+          max-width: 500px;
+          margin: 50px auto;
+          text-align: center;
+          background-color: #e6ffee;
+          border-left: 8px solid #28a745;
+          padding: 30px;
+          border-radius: 15px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .success-card i {
+          font-size: 40px;
+          color: #28a745;
+          margin-bottom: 15px;
+        }
+
+        .success-card button {
+          margin-top: 15px;
+        }
+      </style>
+      
+
+        <div class="form-card" id="formCard">
+          <h2 class="form-heading">Franchise Application Form</h2>
+          <form id="franchiseForm">
+            <div class="row g-3">
+              <div class="col-md-4"><input type="text" class="form-control" placeholder="Firstname" required></div>
+              <div class="col-md-4"><input type="text" class="form-control" placeholder="Middle" required></div>
+              <div class="col-md-4"><input type="text" class="form-control" placeholder="Lastname" required></div>
+
+              <div class="col-md-4"><input type="number" class="form-control" placeholder="Age" required></div>
+              <div class="col-md-4"><input type="email" class="form-control" placeholder="Email" required></div>
+              <div class="col-md-4"><input type="tel" class="form-control" placeholder="Cell Number" required></div>
+
+              <div class="col-md-6"><input type="text" class="form-control" placeholder="Landline Number" required>
+              </div>
+              <div class="col-md-6"><input type="text" class="form-control"
+                  placeholder="Total Fund Available for Invest" required></div>
+
+              <div class="col-md-6"><input type="text" class="form-control"
+                  placeholder="You own funds available to invest" required></div>
+              <div class="col-md-6"><input type="text" class="form-control" placeholder="Fund You Will Borrow" required>
+              </div>
+
+              <div class="col-md-6"><input type="text" class="form-control"
+                  placeholder="Who or where will you borrow funds from" required></div>
+              <div class="col-md-6"><input type="text" class="form-control"
+                  placeholder="Previous Business Experience (if any)"></div>
+
+              <div class="col-md-6"><input type="date" class="form-control" placeholder="dd-mm-yyyy" required></div>
+              <div class="col-12">
+                <textarea class="form-control" rows="3"
+                  placeholder="Areas of interest – where you'd like to open a store" required></textarea>
+              </div>
+
+              <div class="col-12 text-center">
+                <button type="submit" class="btn btn-success px-5">Send</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="success-card" id="successMessage">
+          <i class="bi bi-check-circle-fill"></i>
+          <h4>Your query has been submitted</h4>
+          <p>Our team will contact you shortly.</p>
+          <button class="btn btn-success" onclick="location.reload()">OK</button>
+        </div>
+
+    
+       <script>
+  const form = document.getElementById('franchiseForm');
+  const successCard = document.getElementById('successMessage');
+  const formCard = document.getElementById('formCard');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (form.checkValidity()) {
+      // Instead of removing formCard, hide it while keeping layout
+      formCard.style.visibility = 'hidden';
+      formCard.style.height = '0';
+      formCard.style.overflow = 'hidden';
+
+      // Show the success message
+      successCard.style.display = 'block';
+
+      // Optionally scroll to it
+      successCard.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      form.reportValidity();
+    }
+  });
+</script>
+
+<!-- Scroll to Top Button -->
+<button id="scrollToTop" class="scroll-to-top" onclick="scrollToTop()">
+  <i class="bi bi-arrow-up"></i>
+</button>
+
+<footer style="background-color: #222120; color: #fff; padding: 40px 20px;">
+  <div class="container">
+    <div class="row">
+      <!-- Left: Info -->
+      <div class="col-md-6 footer-left-align">
+        <img src="assets/logo.png" alt="7 Years Trusted" style="height: 90px;">
+        <h5 class="mt-3" style="font-size: 26px;">7 Years Trusted</h5>
+        <h5 class="mt-3" style="font-size: 25px;">15+ branches Hyderabad, Bangalore, Mangalore, and Mysuru</h5>
+        <ul style="list-style: disc; padding-left: 20px; font-size: 18px;">
+          <li>Gold purity checked with industry-standard machines.</li>
+          <li>Same gold rate across all branches.</li>
+          <li>Transparent process and instant cash.</li>
+        </ul>
+      </div>
+
+      <!-- Right: Contact -->
+      <div class="col-md-6 mt-4 mt-md-0 footer-left-align">
+        <div class="row">
+          <div class="col-6">
+            <!-- Optional: Quick Links (you can uncomment if needed) -->
+            <!-- <h6>Quick Links</h6>
+            <ul class="list-unstyled">
+              <li><a href="about.html" class="text-light text-decoration-none">Why Us</a></li>
+              <li><a href="known-more.html" class="text-light text-decoration-none">Refer & Earn</a></li>
+              <li><a href="filecomplaint.html" class="text-light text-decoration-none">Help Center</a></li>
+              <li><a href="index.html" class="text-light text-decoration-none">Contact</a></li>
+              <li><a href="carrer.html" class="text-light text-decoration-none">Careers</a></li>
+            </ul> -->
+          </div>
+
+          <!-- Contact Section Slightly Lower -->
+          <div class="col-6 footer-contact-section" style="margin-top: 100px;">
+            <h6 style="font-size: 20px;">Contact</h6>
+            <p style="font-size: 18px;">
+              Email: <a href="mailto:sristargoldcompany@gmail.com" class="text-light">ssgc@gmail.com</a>
+            </p>
+            <p style="font-size: 18px;">Phone: +916366333444</p>
+
+            <h6 class="mt-3" style="font-size: 20px;">Follow us:</h6>
+            <div class="d-flex gap-3 fs-4">
+              <a href="https://www.facebook.com/photo/?fbid=671966871601909&set=a.671966864935243" class="text-light"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/sristargold?igsh=YXVlb3NnY2xuY3gw" class="text-light"><i class="bi bi-instagram"></i></a>
+              <a href="https://twitter.com/SriStarGold/status/1743166187977269745" class="text-light"><i class="bi bi-twitter"></i></a>
+              <a href="https://www.youtube.com/channel/UC7xKHOdqDLvlnynflYNBdew" class="text-light"><i class="bi bi-youtube"></i></a>
+              <a href="https://api.whatsapp.com/send/?phone=6366333444&text&type=phone_number&app_absent=0" class="text-light"><i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr style="border-color: #555;">
+    <p class="text-center footer-copyright" style="font-size: 15px;"><b>© 2025 Sri Star Gold.</b></p>
+  </div>
+</footer>
+
+<!-- Scroll to Top and Footer Mobile Styles -->
+<style>
+  /* Scroll to Top Button */
+  .scroll-to-top {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    display: none;
+  }
+
+  .scroll-to-top:hover {
+    background-color: #FFA500;
+    transform: translateY(-2px);
+  }
+
+  .scroll-to-top.show {
+    display: block;
+  }
+
+  /* Mobile Footer Alignment */
+  @media (max-width: 768px) {
+    .footer-left-align {
+      text-align: left !important;
+    }
+    
+    .footer-contact-section {
+      margin-top: 20px !important;
+    }
+    
+    .footer-copyright {
+      text-align: left !important;
+    }
+    
+    footer .row > div {
+      text-align: left !important;
+    }
+    
+    footer .d-flex {
+      justify-content: flex-start !important;
+    }
+    
+    /* Mobile Contact Section - Full Width and Left Aligned */
+    footer .col-md-6:last-child .row {
+      flex-direction: column !important;
+    }
+    
+    footer .col-md-6:last-child .col-6 {
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+      margin-top: 0 !important;
+    }
+    
+    footer .footer-contact-section {
+      margin-top: 0 !important;
+      text-align: left !important;
+    }
+  }
+</style>
+
+<!-- Scroll to Top JavaScript -->
+<script>
+  // Show/hide scroll to top button
+  window.addEventListener('scroll', function() {
+    const scrollToTopBtn = document.getElementById('scrollToTop');
+    if (window.pageYOffset > 300) {
+      scrollToTopBtn.classList.add('show');
+    } else {
+      scrollToTopBtn.classList.remove('show');
+    }
+  });
+
+  // Scroll to top function
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>

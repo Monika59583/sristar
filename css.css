@@ -1,0 +1,100 @@
+<style>
+  .contact-section {
+    background-color: #e66f8a;
+    padding: 20px;
+    border-radius: 8px;
+  }
+</style>
+<style>
+ .contact Us {
+  background-color: #90c9e3;
+   padding: 20px;
+  }
+  </style>
+  <style>
+  .img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; /* Adjust size as needed */
+  }
+</style>
+<style>
+.card-img-top {
+  height: 20px;
+  object-fit: cover;
+}
+</style> 
+<style>
+  .background-box {
+    background-color: #d73a91cb; /* Light gold */
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+  }
+</style>
+.custom-accordion .accordion-item {
+  border: none;
+  border-bottom: 1px solid #edadad;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.custom-accordion .accordion-button {
+  font-weight: 500;
+  font-size: 16px;
+  padding: 15px 20px;
+  background-color: #f8f9fa;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.custom-accordion .accordion-button:not(.collapsed) {
+  background-color: #e1edff;
+  color: #eef0f2;
+}
+
+.custom-accordion .accordion-body {
+  font-size: 15px;
+  background-color: #fff;
+  padding: 20px;
+  color: #444;
+}
+<style>
+    .carousel-item {
+      position: relative;
+    }
+
+    .hero-image {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+    }
+
+    .logo-overlay {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      z-index: 10;
+    }
+
+    .logo-overlay img {
+      height: 40px;
+      width: auto;
+      border-radius: 6px;
+    }
+
+    @media (max-width: 768px) {
+      .hero-image {
+        height: 60vh;
+      }
+
+      .logo-overlay img {
+        height: 30px;
+      }
+    }
+  </style>
+
+
+

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Branches</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    /* Navbar */
+    .navbar-gradient {
+      background: linear-gradient(90deg, #FFD700, #FFA500, #FF8C00);
+    }
+
+    .navbar-nav .nav-link {
+      margin: 0 15px;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+   
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-gradient">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="assets/logo.png" alt="" style="height: 80px; width: auto; margin-right: 10px;">
+          Sristar Gold
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-left" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active text-black" aria-current="page" href="Home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="service.html">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="branches.html">Branches</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="partner.html">Partner</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="return.html">Gold Card</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="contact.html">Contact Us</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                About Us
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="known.html">Who are </a></li>
+                <li><a class="dropdown-item" href="#">Gallery</a></li>
+                <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+              </ul>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+ <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <!-- Carousel Item -->
+      <div class="carousel-item active">
+        <img src="assets/branch2.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+  </div>
+  
+ <style>
+    body {
+  background: 
+    
+    url('assets/marble.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+    .branch-card {
+      background: linear-gradient(to right, #b1f58c, #f2d45c);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .branch-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 35px rgba(0, 0, 0, 0.15);
+    }
+
+    .branch-img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .branch-body {
+      padding: 20px;
+    }
+
+    .branch-body h5 {
+      color: #7a0026;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .branch-body p {
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+
+    .map-link {
+      text-decoration: none;
+      color: #1d3557;
+      font-weight: bold;
+    }
+
+    .map-link:hover {
+      text-decoration: underline;
+      color: #7a0026;
+    }
+  </style>
+
+  <section class="branch-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Branches</h2>
+
+      <!-- Buttons -->
+      <div class="text-center mb-4">
+        <button class="btn btn-outline-primary me-2" onclick="showBranches('karnataka')">Karnataka</button>
+        <button class="btn btn-outline-secondary" onclick="showBranches('tamilnadu')">Tamil Nadu</button>
+        <button class="btn btn-outline-success" onclick="showBranches('telangana')">Telangana</button>
+
+      </div>
+
+      <!-- Karnataka Branches -->
+      <div class="row g-4 justify-content-center" id="karnataka-branches">
+        <!-- Branch 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="branch-card">
+            <img src="assets/banglore.png" alt="Bangalore" class="branch-img">
+            <div class="branch-body">
+              <h5>Bangalore (Malleshwaram)</h5>
+              <p>280/1, Anniamma Arcade, 2nd Floor, Sampige Road, 18th Cross Rd, signal, Malleshwaram, Bengaluru, Karnataka 560003</p>
+              <!-- <p>📞 06366333444</p> -->
+              <!-- <p>✉ <a href="mailto:bangalore@sristargold.com">bangalore@sristargold.com</a></p> -->
+              <a href="https://www.google.com/maps/place/SriStar+Gold+Company/@13.0082761,77.5712431,17z/data=!4m6!3m5!1s0x3bae175987bfcea9:0x4e8aac7669ecfacf!8m2!3d13.0082814!4d77.5712606!16s%2Fg%2F11q4z2gb38?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D" class="map-link" target="_blank">📍 View on Map</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Branch 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="branch-card">
+            <img src="assets/mysuru.jpg" alt="Mysuru" class="branch-img">
+            <div class="branch-body">
+              <h5>Mysuru</h5>
+              <p>No. 912 Susheel Building, Sunnadakeri 4th cross, Mysuru, 570024</p>
+              <!-- <p>📞 06366333444</p> -->
+              <!-- <p>✉ <a href="mailto:bangalore@sristargold.com">bangalore@sristargold.com</a></p> -->
+              <a href="https://www.google.com/maps/place/Sristar+Gold+Company+-+Mysuru/@12.3003116,76.6471091,17z/data=!3m1!4b1!4m6!3m5!1s0x3baf71081159bd0f:0x1fe3fea2c45008b5!8m2!3d12.3003116!4d76.6471091!16s%2Fg%2F11st67z_3j?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D" class="map-link" target="_blank">📍 View on Map</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Branch 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="branch-card">
+            <img src="assets/manglore.jpg" alt="Mangalore" class="branch-img">
+            <div class="branch-body">
+              <h5>Mangalore</h5>
+              <p>Beauty Plaza, 3rd Floor, Balmatta Road, Mangalore - 575001</p>
+              <!-- <p>📞 06366333444</p>
+              <p>✉ <a href="mailto:bangalore@sristargold.com">bangalore@sristargold.com</a></p> -->
+              <a href="https://maps.app.goo.gl/WvtYEF5VHJiWk3eM9?g_st=aw" class="map-link" target="_blank">📍 View on Map</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Branch 4 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="branch-card">
+            <img src="assets/davngere.jpg" alt="Davangere" class="branch-img">
+            <div class="branch-body">
+              <h5>Davangere</h5>
+              <p>PB Road Opposite Reliance Market Malbar tyres 2nd Floor Davangere Near ICICI Bank, Karnataka - 577002</p>
+              <!-- <p>📞 06366333444</p>
+              <p>✉ <a href="mailto:bangalore@sristargold.com">bangalore@sristargold.com</a></p> -->
+              <a href="https://maps.app.goo.gl/CzQKBCQyjK1xYYN69?g_st=aw" class="map-link" target="_blank">📍 View on Map</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Branch 5 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="branch-card">
+            <img src="assets/hubli.jpg" alt="Hubli" class="branch-img">
+            <div class="branch-body">
+              <h5>Hubli</h5>
+              <p>Neeligin Road, Hubli, Karnataka 580029</p>
+              <!-- <p>📞 06366333444</p>
+              <p>✉ <a href="mailto:bangalore@sristargold.com">bangalore@sristargold.com</a></p> -->
+              <a href="https://maps.app.goo.gl/ZPZEZzBETZZHJ43T9?g_st=aw" class="map-link" target="_blank">📍 View on Map</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Branch 6 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="branch-card">
+            <img src="assets/raichur.jpg" alt="Raichur" class="branch-img">
+            <div class="branch-body">
+              <h5>Raichur</h5>
+              <p>1st Floor, Gunj Road, Near Vaikuntam Complex, Raichur - 584101</p>
+              <!-- <p>📞 06366333444</p>
+              <p>✉ <a href="mailto:bangalore@sristargold.com">bangalore@sristargold.com</a></p> -->
+              <a href="https://maps.app.goo.gl/3CMMFCsCz3RavqhB9?g_st=aw" class="map-link" target="_blank">📍 View on Map</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Branch 7 (centered) -->
+        <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+          <div class="branch-card" style="width: 100%;">
+            <img src="assets/haveri.png" alt="Hyderabad" class="branch-img">
+            <div class="branch-body">
+              <h5>Haveri</h5>
+              <p>Gudagar Complex,Hosamani Siddappa circle beside KGP,Jewelry Haveri-581110</p>
+              <!-- <p>📞 06366333444</p>
+              <p>✉ <a href="mailto:bangalore@sristargold.com">bangalore@sristargold.com</a></p> -->
+              <a href="https://maps.app.goo.gl/LpEFxb4taJyMhsqA9?g_st=aw" class="map-link" target="_blank">📍 View on Map</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+          <div class="branch-card" style="width: 100%;">
+            <img src="assets/shivamoga.jpeg" alt="Hyderabad" class="branch-img">
+            <div class="branch-body">
+              <h5>Shivamogga</h5>
+              <p>#05,NT Road,Muneshwara builiding,opposite to karnataka bank,near tempo stand,shivamogga-577202</p>
+              <!-- <p>📞 06366333444</p>
+              <p>✉ <a href="mailto:bangalore@sristargold.com">bangalore@sristargold.com</a></p> -->
+              <a href="https://maps.app.goo.gl/LpEFxb4taJyMhsqA9?g_st=aw" class="map-link" target="_blank">📍 View on Map</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tamil Nadu Branches -->
+      <div class="row g-4 justify-content-center d-none" id="tamilnadu-branches">
+        <div class="col-md-6 col-lg-4">
+          <div class="branch-card">
+            <img src="assets/chennai.jpg" alt="Chennai" class="branch-img">
+            <div class="branch-body">
+              <h5>Chennai</h5>
+              <p>JV White House, 1st Floor, Blackers Road, Anna Salai, Chennai, Tamil Nadu 600002</p>
+              <!-- <p>📞 06366333444</p>
+              <p>✉ <a href="mailto:bangalore@sristargold.com">bangalore@sristargold.com</a></p> -->
+              <a href="https://maps.app.goo.gl/GLWgZofUzZuQgYLG6?g_st=aw" class="map-link" target="_blank">📍 View on Map</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Telangana Branches -->
+<div class="row g-4 justify-content-center d-none" id="telangana-branches">
+  <div class="col-md-6 col-lg-4">
+    <div class="branch-card">
+      <img src="assets/hybradab.png" alt="Warangal" class="branch-img">
+      <div class="branch-body">
+        <h5>Hyderabad(Vajra Residency)</h5>
+        <p>203 A Block 1st floor,Musheerabad main road,bakaram,kavadiguda,Hyderabad,Teangana-500080</p>
+        <a href="https://maps.app.goo.gl/u8N5m2Hp1Hrdqtr17?g_st=aw" class="map-link" target="_blank">📍 View on Map</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 col-lg-4">
+    <div class="branch-card">
+      <img src="assets/hydrabad1.jpeg" alt="Karimnagar" class="branch-img">
+      <div class="branch-body">
+        <h5>Hyderabad(Mallapur)</h5>
+        <p>#7 No 5-1-121/2,HCK complex Mallapur main road,Annapurna colony,Uppal Tq district,Hyderabad-500076</p>
+        <a href="https://maps.app.goo.gl/2H7PEvG9ZrihCJa96?g_st=aw" class="map-link" target="_blank">📍 View on Map</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+    </div>
+  </section>
+
+  <script>
+  function showBranches(state) {
+    const allBranchSections = ['karnataka', 'tamilnadu', 'telangana'];
+    allBranchSections.forEach(id => {
+      const section = document.getElementById(`${id}-branches`);
+      if (section) {
+        section.classList.add('d-none');
+      }
+    });
+
+    const activeSection = document.getElementById(`${state}-branches`);
+    if (activeSection) {
+      activeSection.classList.remove('d-none');
+    }
+  }
+</script>
+
+<!-- Scroll to Top Button -->
+<button id="scrollToTop" class="scroll-to-top" onclick="scrollToTop()">
+  <i class="bi bi-arrow-up"></i>
+</button>
+
+<footer style="background-color: #222120; color: #fff; padding: 40px 20px;">
+  <div class="container">
+    <div class="row">
+      <!-- Left: Info -->
+      <div class="col-md-6 footer-left-align">
+        <img src="assets/logo.png" alt="7 Years Trusted" style="height: 90px;">
+        <h5 class="mt-3" style="font-size: 26px;">7 Years Trusted</h5>
+        <h5 class="mt-3" style="font-size: 25px;">15+ branches Hyderabad, Bangalore, Mangalore, and Mysuru</h5>
+        <ul style="list-style: disc; padding-left: 20px; font-size: 18px;">
+          <li>Gold purity checked with industry-standard machines.</li>
+          <li>Same gold rate across all branches.</li>
+          <li>Transparent process and instant cash.</li>
+        </ul>
+      </div>
+
+      <!-- Right: Contact -->
+      <div class="col-md-6 mt-4 mt-md-0 footer-left-align">
+        <div class="row">
+          <div class="col-6">
+            <!-- Optional: Quick Links (you can uncomment if needed) -->
+            <!-- <h6>Quick Links</h6>
+            <ul class="list-unstyled">
+              <li><a href="about.html" class="text-light text-decoration-none">Why Us</a></li>
+              <li><a href="known-more.html" class="text-light text-decoration-none">Refer & Earn</a></li>
+              <li><a href="filecomplaint.html" class="text-light text-decoration-none">Help Center</a></li>
+              <li><a href="index.html" class="text-light text-decoration-none">Contact</a></li>
+              <li><a href="carrer.html" class="text-light text-decoration-none">Careers</a></li>
+            </ul> -->
+          </div>
+
+          <!-- Contact Section Slightly Lower -->
+         <div class="col-6 footer-contact-section" style="margin-top: 100px;">
+            <h6 style="font-size: 20px;">Contact</h6>
+            <p style="font-size: 18px;">
+              Email: <a href="mailto:sristargoldcompany@gmail.com" class="text-light">ssgc@gmail.com</a>
+            </p>
+            <p style="font-size: 18px;">Phone: +916366333444</p>
+
+            <h6 class="mt-3" style="font-size: 20px;">Follow us:</h6>
+            <div class="d-flex gap-3 fs-4">
+              <a href="https://www.facebook.com/photo/?fbid=671966871601909&set=a.671966864935243" class="text-light"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/sristargold?igsh=YXVlb3NnY2xuY3gw" class="text-light"><i class="bi bi-instagram"></i></a>
+              <a href="https://twitter.com/SriStarGold/status/1743166187977269745" class="text-light"><i class="bi bi-twitter"></i></a>
+              <a href="https://www.youtube.com/channel/UC7xKHOdqDLvlnynflYNBdew" class="text-light"><i class="bi bi-youtube"></i></a>
+              <a href="https://api.whatsapp.com/send/?phone=6366333444&text&type=phone_number&app_absent=0" class="text-light"><i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr style="border-color: #555;">
+    <p class="text-center footer-copyright" style="font-size: 15px;"><b>© 2025 Sri Star Gold.</b></p>
+  </div>
+</footer>
+
+<!-- Scroll to Top and Footer Mobile Styles -->
+<style>
+  /* Scroll to Top Button */
+  .scroll-to-top {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    display: none;
+  }
+
+  .scroll-to-top:hover {
+    background-color: #FFA500;
+    transform: translateY(-2px);
+  }
+
+  .scroll-to-top.show {
+    display: block;
+  }
+
+  /* Mobile Footer Alignment */
+  @media (max-width: 768px) {
+    .footer-left-align {
+      text-align: left !important;
+    }
+    
+    .footer-contact-section {
+      margin-top: 20px !important;
+    }
+    
+    .footer-copyright {
+      text-align: left !important;
+    }
+    
+    footer .row > div {
+      text-align: left !important;
+    }
+    
+    footer .d-flex {
+      justify-content: flex-start !important;
+    }
+    
+    /* Mobile Contact Section - Full Width and Left Aligned */
+    footer .col-md-6:last-child .row {
+      flex-direction: column !important;
+    }
+    
+    footer .col-md-6:last-child .col-6 {
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+      margin-top: 0 !important;
+    }
+    
+    footer .footer-contact-section {
+      margin-top: 0 !important;
+      text-align: left !important;
+    }
+  }
+</style>
+
+<!-- Scroll to Top JavaScript -->
+<script>
+  // Show/hide scroll to top button
+  window.addEventListener('scroll', function() {
+    const scrollToTopBtn = document.getElementById('scrollToTop');
+    if (window.pageYOffset > 300) {
+      scrollToTopBtn.classList.add('show');
+    } else {
+      scrollToTopBtn.classList.remove('show');
+    }
+  });
+
+  // Scroll to top function
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
